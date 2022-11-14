@@ -1,5 +1,5 @@
 Simulator report for lab1_TAB_460
-Sun Oct 23 15:32:14 2022
+Mon Nov 14 20:09:27 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 118 nodes    ;
-; Simulation Coverage         ;      62.71 % ;
-; Total Number of Transitions ; 290          ;
+; Simulation Netlist Size     ; 78 nodes     ;
+; Simulation Coverage         ;      67.50 % ;
+; Total Number of Transitions ; 440          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Functional ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; OA2.vwf    ;               ;
+; Vector input source                                                                        ; OA1.vwf    ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -94,194 +94,137 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      62.71 % ;
-; Total nodes checked                                 ; 118          ;
-; Total output ports checked                          ; 118          ;
-; Total output ports with complete 1/0-value coverage ; 74           ;
-; Total output ports with no 1/0-value coverage       ; 35           ;
-; Total output ports with no 1-value coverage         ; 41           ;
-; Total output ports with no 0-value coverage         ; 38           ;
+; Total coverage as a percentage                      ;      67.50 % ;
+; Total nodes checked                                 ; 78           ;
+; Total output ports checked                          ; 80           ;
+; Total output ports with complete 1/0-value coverage ; 54           ;
+; Total output ports with no 1/0-value coverage       ; 16           ;
+; Total output ports with no 1-value coverage         ; 20           ;
+; Total output ports with no 0-value coverage         ; 22           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                        ;
-+------------------------+------------------------+------------------+
-; Node Name              ; Output Port Name       ; Output Port Type ;
-+------------------------+------------------------+------------------+
-; |OA2|c[7]              ; |OA2|c[7]              ; pin_out          ;
-; |OA2|c[6]              ; |OA2|c[6]              ; pin_out          ;
-; |OA2|c[5]              ; |OA2|c[5]              ; pin_out          ;
-; |OA2|c[4]              ; |OA2|c[4]              ; pin_out          ;
-; |OA2|c[3]              ; |OA2|c[3]              ; pin_out          ;
-; |OA2|c[2]              ; |OA2|c[2]              ; pin_out          ;
-; |OA2|c[0]              ; |OA2|c[0]              ; pin_out          ;
-; |OA2|a[2]              ; |OA2|a[2]              ; out              ;
-; |OA2|a[1]              ; |OA2|a[1]              ; out              ;
-; |OA2|b[3]              ; |OA2|b[3]              ; out              ;
-; |OA2|b[2]              ; |OA2|b[2]              ; out              ;
-; |OA2|b[1]              ; |OA2|b[1]              ; out              ;
-; |OA2|b[0]              ; |OA2|b[0]              ; out              ;
-; |OA2|hren:inst|rc~2    ; |OA2|hren:inst|rc~2    ; out              ;
-; |OA2|hren:inst|rc~3    ; |OA2|hren:inst|rc~3    ; out              ;
-; |OA2|hren:inst|rc~4    ; |OA2|hren:inst|rc~4    ; out              ;
-; |OA2|hren:inst|rc~5    ; |OA2|hren:inst|rc~5    ; out              ;
-; |OA2|hren:inst|rc~6    ; |OA2|hren:inst|rc~6    ; out              ;
-; |OA2|hren:inst|rc~8    ; |OA2|hren:inst|rc~8    ; out              ;
-; |OA2|hren:inst|rc~9    ; |OA2|hren:inst|rc~9    ; out              ;
-; |OA2|hren:inst|rc~10   ; |OA2|hren:inst|rc~10   ; out              ;
-; |OA2|hren:inst|rc~11   ; |OA2|hren:inst|rc~11   ; out              ;
-; |OA2|hren:inst|rc~12   ; |OA2|hren:inst|rc~12   ; out              ;
-; |OA2|hren:inst|rc~13   ; |OA2|hren:inst|rc~13   ; out              ;
-; |OA2|hren:inst|rc~14   ; |OA2|hren:inst|rc~14   ; out              ;
-; |OA2|hren:inst|rc~15   ; |OA2|hren:inst|rc~15   ; out              ;
-; |OA2|hren:inst|rc~16   ; |OA2|hren:inst|rc~16   ; out              ;
-; |OA2|hren:inst|rc~17   ; |OA2|hren:inst|rc~17   ; out              ;
-; |OA2|hren:inst|rc~18   ; |OA2|hren:inst|rc~18   ; out              ;
-; |OA2|hren:inst|rc~19   ; |OA2|hren:inst|rc~19   ; out              ;
-; |OA2|hren:inst|rc~20   ; |OA2|hren:inst|rc~20   ; out              ;
-; |OA2|hren:inst|c[7]    ; |OA2|hren:inst|c[7]    ; out              ;
-; |OA2|hren:inst|c[6]    ; |OA2|hren:inst|c[6]    ; out              ;
-; |OA2|hren:inst|c[5]    ; |OA2|hren:inst|c[5]    ; out              ;
-; |OA2|hren:inst|c[4]    ; |OA2|hren:inst|c[4]    ; out              ;
-; |OA2|hren:inst|c[3]    ; |OA2|hren:inst|c[3]    ; out              ;
-; |OA2|hren:inst|c[2]    ; |OA2|hren:inst|c[2]    ; out              ;
-; |OA2|hren:inst|c[0]    ; |OA2|hren:inst|c[0]    ; out              ;
-; |OA2|hren:inst|Add0~0  ; |OA2|hren:inst|Add0~0  ; out0             ;
-; |OA2|hren:inst|Add0~2  ; |OA2|hren:inst|Add0~2  ; out0             ;
-; |OA2|hren:inst|Add1~0  ; |OA2|hren:inst|Add1~0  ; out0             ;
-; |OA2|hren:inst|Add1~1  ; |OA2|hren:inst|Add1~1  ; out0             ;
-; |OA2|hren:inst|Add1~2  ; |OA2|hren:inst|Add1~2  ; out0             ;
-; |OA2|hren:inst|Add1~3  ; |OA2|hren:inst|Add1~3  ; out0             ;
-; |OA2|hren:inst|Add1~5  ; |OA2|hren:inst|Add1~5  ; out0             ;
-; |OA2|hren:inst|Add1~6  ; |OA2|hren:inst|Add1~6  ; out0             ;
-; |OA2|hren:inst|Add1~7  ; |OA2|hren:inst|Add1~7  ; out0             ;
-; |OA2|hren:inst|Add1~12 ; |OA2|hren:inst|Add1~12 ; out0             ;
-; |OA2|hren:inst|Add1~17 ; |OA2|hren:inst|Add1~17 ; out0             ;
-; |OA2|hren:inst|Add2~0  ; |OA2|hren:inst|Add2~0  ; out0             ;
-; |OA2|hren:inst|Add2~1  ; |OA2|hren:inst|Add2~1  ; out0             ;
-; |OA2|hren:inst|Add2~2  ; |OA2|hren:inst|Add2~2  ; out0             ;
-; |OA2|hren:inst|Add2~3  ; |OA2|hren:inst|Add2~3  ; out0             ;
-; |OA2|hren:inst|Add2~5  ; |OA2|hren:inst|Add2~5  ; out0             ;
-; |OA2|hren:inst|Add2~6  ; |OA2|hren:inst|Add2~6  ; out0             ;
-; |OA2|hren:inst|Add2~7  ; |OA2|hren:inst|Add2~7  ; out0             ;
-; |OA2|hren:inst|Add2~12 ; |OA2|hren:inst|Add2~12 ; out0             ;
-; |OA2|hren:inst|Add2~17 ; |OA2|hren:inst|Add2~17 ; out0             ;
-; |OA2|hren:inst|Add2~22 ; |OA2|hren:inst|Add2~22 ; out0             ;
-; |OA2|hren:inst|Add3~0  ; |OA2|hren:inst|Add3~0  ; out0             ;
-; |OA2|hren:inst|Add3~1  ; |OA2|hren:inst|Add3~1  ; out0             ;
-; |OA2|hren:inst|Add3~2  ; |OA2|hren:inst|Add3~2  ; out0             ;
-; |OA2|hren:inst|Add3~3  ; |OA2|hren:inst|Add3~3  ; out0             ;
-; |OA2|hren:inst|Add3~5  ; |OA2|hren:inst|Add3~5  ; out0             ;
-; |OA2|hren:inst|Add3~6  ; |OA2|hren:inst|Add3~6  ; out0             ;
-; |OA2|hren:inst|Add3~7  ; |OA2|hren:inst|Add3~7  ; out0             ;
-; |OA2|hren:inst|Add3~8  ; |OA2|hren:inst|Add3~8  ; out0             ;
-; |OA2|hren:inst|Add3~9  ; |OA2|hren:inst|Add3~9  ; out0             ;
-; |OA2|hren:inst|Add3~12 ; |OA2|hren:inst|Add3~12 ; out0             ;
-; |OA2|hren:inst|Add3~13 ; |OA2|hren:inst|Add3~13 ; out0             ;
-; |OA2|hren:inst|Add3~14 ; |OA2|hren:inst|Add3~14 ; out0             ;
-; |OA2|hren:inst|Add3~17 ; |OA2|hren:inst|Add3~17 ; out0             ;
-; |OA2|hren:inst|Add3~22 ; |OA2|hren:inst|Add3~22 ; out0             ;
-; |OA2|hren:inst|Add3~27 ; |OA2|hren:inst|Add3~27 ; out0             ;
-+------------------------+------------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                          ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |OA1|Zero                                                                                              ; |OA1|Zero                                                                                                 ; pin_out          ;
+; |OA1|inst16                                                                                            ; |OA1|inst16                                                                                               ; out0             ;
+; |OA1|Clock                                                                                             ; |OA1|Clock                                                                                                ; out              ;
+; |OA1|ShiftR                                                                                            ; |OA1|ShiftR                                                                                               ; out              ;
+; |OA1|P_hi[2]                                                                                           ; |OA1|P_hi[2]                                                                                              ; pin_out          ;
+; |OA1|P_hi[0]                                                                                           ; |OA1|P_hi[0]                                                                                              ; pin_out          ;
+; |OA1|Add                                                                                               ; |OA1|Add                                                                                                  ; out              ;
+; |OA1|inst14                                                                                            ; |OA1|inst14                                                                                               ; out0             ;
+; |OA1|P_low[3]                                                                                          ; |OA1|P_low[3]                                                                                             ; pin_out          ;
+; |OA1|P_low[2]                                                                                          ; |OA1|P_low[2]                                                                                             ; pin_out          ;
+; |OA1|P_low[1]                                                                                          ; |OA1|P_low[1]                                                                                             ; pin_out          ;
+; |OA1|P_low[0]                                                                                          ; |OA1|P_low[0]                                                                                             ; pin_out          ;
+; |OA1|inst13                                                                                            ; |OA1|inst13                                                                                               ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                      ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; regout           ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; regout           ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                      ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; out0             ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                  ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                     ; out0             ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0      ; sumout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1      ; sumout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2   ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2      ; sumout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[2] ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[2]               ; regout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[1] ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[1]               ; regout           ;
+; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[0] ; |OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[0]               ; regout           ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8            ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8               ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10           ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10              ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11           ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11              ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12           ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12              ; out0             ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------+
-; Missing 1-Value Coverage                                           ;
-+------------------------+------------------------+------------------+
-; Node Name              ; Output Port Name       ; Output Port Type ;
-+------------------------+------------------------+------------------+
-; |OA2|c[1]              ; |OA2|c[1]              ; pin_out          ;
-; |OA2|a[3]              ; |OA2|a[3]              ; out              ;
-; |OA2|a[0]              ; |OA2|a[0]              ; out              ;
-; |OA2|hren:inst|c[1]    ; |OA2|hren:inst|c[1]    ; out              ;
-; |OA2|hren:inst|Add0~4  ; |OA2|hren:inst|Add0~4  ; out0             ;
-; |OA2|hren:inst|Add0~6  ; |OA2|hren:inst|Add0~6  ; out0             ;
-; |OA2|hren:inst|Add1~4  ; |OA2|hren:inst|Add1~4  ; out0             ;
-; |OA2|hren:inst|Add1~8  ; |OA2|hren:inst|Add1~8  ; out0             ;
-; |OA2|hren:inst|Add1~9  ; |OA2|hren:inst|Add1~9  ; out0             ;
-; |OA2|hren:inst|Add1~10 ; |OA2|hren:inst|Add1~10 ; out0             ;
-; |OA2|hren:inst|Add1~11 ; |OA2|hren:inst|Add1~11 ; out0             ;
-; |OA2|hren:inst|Add1~13 ; |OA2|hren:inst|Add1~13 ; out0             ;
-; |OA2|hren:inst|Add1~14 ; |OA2|hren:inst|Add1~14 ; out0             ;
-; |OA2|hren:inst|Add1~15 ; |OA2|hren:inst|Add1~15 ; out0             ;
-; |OA2|hren:inst|Add1~16 ; |OA2|hren:inst|Add1~16 ; out0             ;
-; |OA2|hren:inst|Add2~4  ; |OA2|hren:inst|Add2~4  ; out0             ;
-; |OA2|hren:inst|Add2~8  ; |OA2|hren:inst|Add2~8  ; out0             ;
-; |OA2|hren:inst|Add2~9  ; |OA2|hren:inst|Add2~9  ; out0             ;
-; |OA2|hren:inst|Add2~10 ; |OA2|hren:inst|Add2~10 ; out0             ;
-; |OA2|hren:inst|Add2~11 ; |OA2|hren:inst|Add2~11 ; out0             ;
-; |OA2|hren:inst|Add2~13 ; |OA2|hren:inst|Add2~13 ; out0             ;
-; |OA2|hren:inst|Add2~14 ; |OA2|hren:inst|Add2~14 ; out0             ;
-; |OA2|hren:inst|Add2~15 ; |OA2|hren:inst|Add2~15 ; out0             ;
-; |OA2|hren:inst|Add2~16 ; |OA2|hren:inst|Add2~16 ; out0             ;
-; |OA2|hren:inst|Add2~18 ; |OA2|hren:inst|Add2~18 ; out0             ;
-; |OA2|hren:inst|Add2~19 ; |OA2|hren:inst|Add2~19 ; out0             ;
-; |OA2|hren:inst|Add2~20 ; |OA2|hren:inst|Add2~20 ; out0             ;
-; |OA2|hren:inst|Add2~21 ; |OA2|hren:inst|Add2~21 ; out0             ;
-; |OA2|hren:inst|Add3~4  ; |OA2|hren:inst|Add3~4  ; out0             ;
-; |OA2|hren:inst|Add3~10 ; |OA2|hren:inst|Add3~10 ; out0             ;
-; |OA2|hren:inst|Add3~11 ; |OA2|hren:inst|Add3~11 ; out0             ;
-; |OA2|hren:inst|Add3~15 ; |OA2|hren:inst|Add3~15 ; out0             ;
-; |OA2|hren:inst|Add3~16 ; |OA2|hren:inst|Add3~16 ; out0             ;
-; |OA2|hren:inst|Add3~18 ; |OA2|hren:inst|Add3~18 ; out0             ;
-; |OA2|hren:inst|Add3~19 ; |OA2|hren:inst|Add3~19 ; out0             ;
-; |OA2|hren:inst|Add3~20 ; |OA2|hren:inst|Add3~20 ; out0             ;
-; |OA2|hren:inst|Add3~21 ; |OA2|hren:inst|Add3~21 ; out0             ;
-; |OA2|hren:inst|Add3~23 ; |OA2|hren:inst|Add3~23 ; out0             ;
-; |OA2|hren:inst|Add3~24 ; |OA2|hren:inst|Add3~24 ; out0             ;
-; |OA2|hren:inst|Add3~25 ; |OA2|hren:inst|Add3~25 ; out0             ;
-; |OA2|hren:inst|Add3~26 ; |OA2|hren:inst|Add3~26 ; out0             ;
-+------------------------+------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                   ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |OA1|Load                                                                                   ; |OA1|Load                                                                                   ; out              ;
+; |OA1|Ain[3]                                                                                 ; |OA1|Ain[3]                                                                                 ; out              ;
+; |OA1|Ain[2]                                                                                 ; |OA1|Ain[2]                                                                                 ; out              ;
+; |OA1|Ain[1]                                                                                 ; |OA1|Ain[1]                                                                                 ; out              ;
+; |OA1|Ain[0]                                                                                 ; |OA1|Ain[0]                                                                                 ; out              ;
+; |OA1|Bin[3]                                                                                 ; |OA1|Bin[3]                                                                                 ; out              ;
+; |OA1|Bin[2]                                                                                 ; |OA1|Bin[2]                                                                                 ; out              ;
+; |OA1|Bin[1]                                                                                 ; |OA1|Bin[1]                                                                                 ; out              ;
+; |OA1|Bin[0]                                                                                 ; |OA1|Bin[0]                                                                                 ; out              ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                           ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                           ; out0             ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                               ; out              ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5 ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5 ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6 ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6 ; out0             ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------+
-; Missing 0-Value Coverage                                           ;
-+------------------------+------------------------+------------------+
-; Node Name              ; Output Port Name       ; Output Port Type ;
-+------------------------+------------------------+------------------+
-; |OA2|a[3]              ; |OA2|a[3]              ; out              ;
-; |OA2|hren:inst|Add0~1  ; |OA2|hren:inst|Add0~1  ; out0             ;
-; |OA2|hren:inst|Add0~3  ; |OA2|hren:inst|Add0~3  ; out0             ;
-; |OA2|hren:inst|Add0~5  ; |OA2|hren:inst|Add0~5  ; out0             ;
-; |OA2|hren:inst|Add1~4  ; |OA2|hren:inst|Add1~4  ; out0             ;
-; |OA2|hren:inst|Add1~8  ; |OA2|hren:inst|Add1~8  ; out0             ;
-; |OA2|hren:inst|Add1~9  ; |OA2|hren:inst|Add1~9  ; out0             ;
-; |OA2|hren:inst|Add1~10 ; |OA2|hren:inst|Add1~10 ; out0             ;
-; |OA2|hren:inst|Add1~11 ; |OA2|hren:inst|Add1~11 ; out0             ;
-; |OA2|hren:inst|Add1~13 ; |OA2|hren:inst|Add1~13 ; out0             ;
-; |OA2|hren:inst|Add1~14 ; |OA2|hren:inst|Add1~14 ; out0             ;
-; |OA2|hren:inst|Add1~15 ; |OA2|hren:inst|Add1~15 ; out0             ;
-; |OA2|hren:inst|Add1~16 ; |OA2|hren:inst|Add1~16 ; out0             ;
-; |OA2|hren:inst|Add2~8  ; |OA2|hren:inst|Add2~8  ; out0             ;
-; |OA2|hren:inst|Add2~9  ; |OA2|hren:inst|Add2~9  ; out0             ;
-; |OA2|hren:inst|Add2~10 ; |OA2|hren:inst|Add2~10 ; out0             ;
-; |OA2|hren:inst|Add2~11 ; |OA2|hren:inst|Add2~11 ; out0             ;
-; |OA2|hren:inst|Add2~13 ; |OA2|hren:inst|Add2~13 ; out0             ;
-; |OA2|hren:inst|Add2~14 ; |OA2|hren:inst|Add2~14 ; out0             ;
-; |OA2|hren:inst|Add2~15 ; |OA2|hren:inst|Add2~15 ; out0             ;
-; |OA2|hren:inst|Add2~16 ; |OA2|hren:inst|Add2~16 ; out0             ;
-; |OA2|hren:inst|Add2~18 ; |OA2|hren:inst|Add2~18 ; out0             ;
-; |OA2|hren:inst|Add2~19 ; |OA2|hren:inst|Add2~19 ; out0             ;
-; |OA2|hren:inst|Add2~20 ; |OA2|hren:inst|Add2~20 ; out0             ;
-; |OA2|hren:inst|Add2~21 ; |OA2|hren:inst|Add2~21 ; out0             ;
-; |OA2|hren:inst|Add3~4  ; |OA2|hren:inst|Add3~4  ; out0             ;
-; |OA2|hren:inst|Add3~10 ; |OA2|hren:inst|Add3~10 ; out0             ;
-; |OA2|hren:inst|Add3~11 ; |OA2|hren:inst|Add3~11 ; out0             ;
-; |OA2|hren:inst|Add3~15 ; |OA2|hren:inst|Add3~15 ; out0             ;
-; |OA2|hren:inst|Add3~16 ; |OA2|hren:inst|Add3~16 ; out0             ;
-; |OA2|hren:inst|Add3~18 ; |OA2|hren:inst|Add3~18 ; out0             ;
-; |OA2|hren:inst|Add3~19 ; |OA2|hren:inst|Add3~19 ; out0             ;
-; |OA2|hren:inst|Add3~20 ; |OA2|hren:inst|Add3~20 ; out0             ;
-; |OA2|hren:inst|Add3~21 ; |OA2|hren:inst|Add3~21 ; out0             ;
-; |OA2|hren:inst|Add3~23 ; |OA2|hren:inst|Add3~23 ; out0             ;
-; |OA2|hren:inst|Add3~24 ; |OA2|hren:inst|Add3~24 ; out0             ;
-; |OA2|hren:inst|Add3~25 ; |OA2|hren:inst|Add3~25 ; out0             ;
-; |OA2|hren:inst|Add3~26 ; |OA2|hren:inst|Add3~26 ; out0             ;
-+------------------------+------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                   ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |OA1|P_hi[3]                                                                                ; |OA1|P_hi[3]                                                                                ; pin_out          ;
+; |OA1|P_hi[1]                                                                                ; |OA1|P_hi[1]                                                                                ; pin_out          ;
+; |OA1|Ain[3]                                                                                 ; |OA1|Ain[3]                                                                                 ; out              ;
+; |OA1|Ain[2]                                                                                 ; |OA1|Ain[2]                                                                                 ; out              ;
+; |OA1|Ain[1]                                                                                 ; |OA1|Ain[1]                                                                                 ; out              ;
+; |OA1|Ain[0]                                                                                 ; |OA1|Ain[0]                                                                                 ; out              ;
+; |OA1|Bin[3]                                                                                 ; |OA1|Bin[3]                                                                                 ; out              ;
+; |OA1|Bin[2]                                                                                 ; |OA1|Bin[2]                                                                                 ; out              ;
+; |OA1|Bin[1]                                                                                 ; |OA1|Bin[1]                                                                                 ; out              ;
+; |OA1|Bin[0]                                                                                 ; |OA1|Bin[0]                                                                                 ; out              ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                            ; out0             ;
+; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                            ; |OA1|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                            ; out0             ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                               ; out              ;
+; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                               ; |OA1|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                               ; out              ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                        ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                        ; regout           ;
+; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                        ; |OA1|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                        ; regout           ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5 ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5 ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6 ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6 ; out0             ;
+; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9 ; |OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9 ; out0             ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -297,17 +240,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Oct 23 15:32:14 2022
+    Info: Processing started: Mon Nov 14 20:09:27 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab1_TAB_460 -c lab1_TAB_460
-Info: Using vector source file "D:/ZAGRUZKI/lab1_TA_B/OA2.vwf"
+Info: Using vector source file "D:/FileSet/GitLabs/AT/lab1_TA_B/OA1.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      62.71 %
-Info: Number of transitions in simulation is 290
+Info: Simulation coverage is      67.50 %
+Info: Number of transitions in simulation is 440
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 142 megabytes
-    Info: Processing ended: Sun Oct 23 15:32:14 2022
+    Info: Processing ended: Mon Nov 14 20:09:27 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

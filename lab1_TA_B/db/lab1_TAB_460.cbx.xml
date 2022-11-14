@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="lab1_TAB_460">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA1|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_alh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA1|lpm_constant0:inst12|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_9e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA1|lpm_counter0:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_t9j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -50,7 +50,7 @@ SUBDESIGN lpm_shiftreg0
 VARIABLE
 
 	lpm_shiftreg_component : lpm_shiftreg WITH (
-			LPM_DIRECTION = "RIGHT",
+			LPM_DIRECTION = "LEFT",
 			LPM_TYPE = "LPM_SHIFTREG",
 			LPM_WIDTH = 4
 			);
@@ -77,7 +77,7 @@ END;
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
--- Retrieval info: PRIVATE: LeftShift NUMERIC "0"
+-- Retrieval info: PRIVATE: LeftShift NUMERIC "1"
 -- Retrieval info: PRIVATE: ParallelDataInput NUMERIC "1"
 -- Retrieval info: PRIVATE: Q_OUT NUMERIC "1"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -88,7 +88,7 @@ END;
 -- Retrieval info: PRIVATE: SerialShiftInput NUMERIC "1"
 -- Retrieval info: PRIVATE: SerialShiftOutput NUMERIC "1"
 -- Retrieval info: PRIVATE: nBit NUMERIC "4"
--- Retrieval info: CONSTANT: LPM_DIRECTION STRING "RIGHT"
+-- Retrieval info: CONSTANT: LPM_DIRECTION STRING "LEFT"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_SHIFTREG"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock

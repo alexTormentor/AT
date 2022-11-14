@@ -1,5 +1,5 @@
 Flow report for lab1_TAB_460
-Sun Oct 23 15:22:51 2022
+Mon Nov 14 18:56:42 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Sun Oct 23 15:22:51 2022        ;
+; Flow Status                   ; Successful - Mon Nov 14 18:56:42 2022        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; lab1_TAB_460                                 ;
-; Top-level Entity Name         ; OA2                                          ;
+; Top-level Entity Name         ; OA1                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 36 / 12,480 ( < 1 % )                        ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
-; Total registers               ; 0                                            ;
-; Total pins                    ; 16 / 343 ( 5 % )                             ;
+;     Combinational ALUTs       ; 19 / 12,480 ( < 1 % )                        ;
+;     Dedicated logic registers ; 11 / 12,480 ( < 1 % )                        ;
+; Total registers               ; 11                                           ;
+; Total pins                    ; 21 / 343 ( 6 % )                             ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/23/2022 15:22:46 ;
+; Start date & time ; 11/14/2022 18:56:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab1_TAB_460        ;
 +-------------------+---------------------+
@@ -75,15 +75,15 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 27214211326553.166652776603144 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 27214211326553.166844139508428 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.tdf                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.bsf                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.inc                ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                       ; --            ; OA2         ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; OA2         ; Top            ;
-; TOP_LEVEL_ENTITY                   ; OA2                            ; lab1_TAB_460  ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; OA1         ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; OA1         ; Top            ;
+; TOP_LEVEL_ENTITY                   ; OA1                            ; lab1_TAB_460  ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 
@@ -93,11 +93,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 234 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 260 MB              ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 242 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 261 MB              ; 00:00:02                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 228 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 158 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:04                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 158 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

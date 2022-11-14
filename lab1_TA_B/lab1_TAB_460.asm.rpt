@@ -1,5 +1,5 @@
 Assembler report for lab1_TAB_460
-Sun Oct 23 15:22:51 2022
+Mon Nov 14 18:56:41 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.sof
-  6. Assembler Device Options: D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.pof
+  5. Assembler Device Options: D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.sof
+  6. Assembler Device Options: D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 23 15:22:51 2022 ;
+; Assembler Status      ; Successful - Mon Nov 14 18:56:41 2022 ;
 ; Revision Name         ; lab1_TAB_460                          ;
-; Top-level Entity Name ; OA2                                   ;
+; Top-level Entity Name ; OA1                                   ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,37 +79,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------+
-; Assembler Generated Files              ;
-+----------------------------------------+
-; File Name                              ;
-+----------------------------------------+
-; D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.sof ;
-; D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.pof ;
-+----------------------------------------+
++--------------------------------------------------+
+; Assembler Generated Files                        ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.sof ;
+; D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.pof ;
++--------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Assembler Device Options: D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.sof ;
-+----------------+-------------------------------------------------+
-; Option         ; Setting                                         ;
-+----------------+-------------------------------------------------+
-; Device         ; EP2S15F484C3                                    ;
-; JTAG usercode  ; 0xFFFFFFFF                                      ;
-; Checksum       ; 0x0027DDD6                                      ;
-+----------------+-------------------------------------------------+
++----------------------------------------------------------------------------+
+; Assembler Device Options: D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.sof ;
++----------------+-----------------------------------------------------------+
+; Option         ; Setting                                                   ;
++----------------+-----------------------------------------------------------+
+; Device         ; EP2S15F484C3                                              ;
+; JTAG usercode  ; 0xFFFFFFFF                                                ;
+; Checksum       ; 0x0027966C                                                ;
++----------------+-----------------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Assembler Device Options: D:/ZAGRUZKI/lab1_TA_B/lab1_TAB_460.pof ;
-+--------------------+---------------------------------------------+
-; Option             ; Setting                                     ;
-+--------------------+---------------------------------------------+
-; Device             ; EPC16                                       ;
-; JTAG usercode      ; 0xFFFFFFFF                                  ;
-; Checksum           ; 0x1EF41457                                  ;
-; Compression Ratio  ; 3                                           ;
-+--------------------+---------------------------------------------+
++----------------------------------------------------------------------------+
+; Assembler Device Options: D:/FileSet/GitLabs/AT/lab1_TA_B/lab1_TAB_460.pof ;
++--------------------+-------------------------------------------------------+
+; Option             ; Setting                                               ;
++--------------------+-------------------------------------------------------+
+; Device             ; EPC16                                                 ;
+; JTAG usercode      ; 0xFFFFFFFF                                            ;
+; Checksum           ; 0x1EF58F8F                                            ;
+; Compression Ratio  ; 3                                                     ;
++--------------------+-------------------------------------------------------+
 
 
 +--------------------+
@@ -118,13 +118,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Oct 23 15:22:50 2022
+    Info: Processing started: Mon Nov 14 18:56:40 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab1_TAB_460 -c lab1_TAB_460
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Sun Oct 23 15:22:51 2022
+    Info: Processing ended: Mon Nov 14 18:56:41 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

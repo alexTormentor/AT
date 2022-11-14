@@ -73,7 +73,7 @@ applicable agreement for further details.
 		(line (pt 144 88)(pt 128 88)(line_width 3))
 	)
 	(drawing
-		(text "right shift" (rect 88 17 128 29)(font "Arial" ))
+		(text "left shift" (rect 92 17 128 29)(font "Arial" ))
 		(line (pt 16 16)(pt 128 16)(line_width 1))
 		(line (pt 128 16)(pt 128 128)(line_width 1))
 		(line (pt 128 128)(pt 16 128)(line_width 1))
