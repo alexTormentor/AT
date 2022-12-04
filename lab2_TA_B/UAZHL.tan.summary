@@ -5,41 +5,41 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.377 ns
-From           : Zero
-To             : inst16
+Actual Time    : 3.647 ns
+From           : Start
+To             : UA:inst1|inst17
 From Clock     : --
-To Clock       : Clk
+To Clock       : Clock
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.174 ns
-From           : inst17
-To             : Add
-From Clock     : Clk
+Actual Time    : 7.569 ns
+From           : OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
+To             : P_hi[3]
+From Clock     : Clock
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.778 ns
-From           : Start
-To             : inst17
+Actual Time    : 0.219 ns
+From           : Ain[0]
+To             : OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]
 From Clock     : --
-To Clock       : Clk
+To Clock       : Clock
 Failed Paths   : 0
 
-Type           : Clock Setup: 'Clk'
+Type           : Clock Setup: 'Clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : inst17
-To             : inst17
-From Clock     : Clk
-To Clock       : Clk
+Actual Time    : 126.29 MHz ( period = 7.918 ns )
+From           : OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]
+To             : OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
+From Clock     : Clock
+To Clock       : Clock
 Failed Paths   : 0
 
 Type           : Total number of failed paths

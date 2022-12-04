@@ -1,5 +1,5 @@
 Simulator report for UAZHL
-Mon Nov 28 10:53:40 2022
+Sun Dec 04 15:32:54 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 20 nodes     ;
-; Simulation Coverage         ;      85.00 % ;
-; Total Number of Transitions ; 169          ;
+; Simulation Netlist Size     ; 88 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 3            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Functional ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; UA_VW.vwf  ;               ;
+; Vector input source                                                                        ; FSM.vwf    ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -94,61 +94,217 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      85.00 % ;
-; Total nodes checked                                 ; 20           ;
-; Total output ports checked                          ; 20           ;
-; Total output ports with complete 1/0-value coverage ; 17           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 1            ;
-; Total output ports with no 0-value coverage         ; 2            ;
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 88           ;
+; Total output ports checked                          ; 90           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 87           ;
+; Total output ports with no 1-value coverage         ; 88           ;
+; Total output ports with no 0-value coverage         ; 89           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                        ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                      ; Output Port Name                                                                               ; Output Port Type ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; |UA|Done                                                                                       ; |UA|Done                                                                                       ; pin_out          ;
-; |UA|inst16                                                                                     ; |UA|inst16                                                                                     ; regout           ;
-; |UA|Clk                                                                                        ; |UA|Clk                                                                                        ; out              ;
-; |UA|inst14                                                                                     ; |UA|inst14                                                                                     ; out0             ;
-; |UA|inst9                                                                                      ; |UA|inst9                                                                                      ; out0             ;
-; |UA|inst17                                                                                     ; |UA|inst17                                                                                     ; regout           ;
-; |UA|inst15                                                                                     ; |UA|inst15                                                                                     ; out0             ;
-; |UA|inst                                                                                       ; |UA|inst                                                                                       ; out0             ;
-; |UA|inst8                                                                                      ; |UA|inst8                                                                                      ; out0             ;
-; |UA|Bn                                                                                         ; |UA|Bn                                                                                         ; out              ;
-; |UA|Load                                                                                       ; |UA|Load                                                                                       ; pin_out          ;
-; |UA|Add                                                                                        ; |UA|Add                                                                                        ; pin_out          ;
-; |UA|ShiftR                                                                                     ; |UA|ShiftR                                                                                     ; pin_out          ;
-; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2] ; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2] ; out0             ;
-; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]  ; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]  ; out0             ;
-; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2] ; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2] ; out0             ;
-; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2] ; |UA|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2] ; out0             ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-
-
-The following table displays output ports that do not toggle to 1 during simulation.
 +-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
+; Complete 1/0-Value Coverage                     ;
 +-----------+------------------+------------------+
 ; Node Name ; Output Port Name ; Output Port Type ;
 +-----------+------------------+------------------+
-; |UA|Start ; |UA|Start        ; out              ;
-+-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                       ; Output Port Name                                                                                                   ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
+; |FSM|Done                                                                                                       ; |FSM|Done                                                                                                          ; pin_out          ;
+; |FSM|Start                                                                                                      ; |FSM|Start                                                                                                         ; out              ;
+; |FSM|P_low[3]                                                                                                   ; |FSM|P_low[3]                                                                                                      ; pin_out          ;
+; |FSM|P_low[2]                                                                                                   ; |FSM|P_low[2]                                                                                                      ; pin_out          ;
+; |FSM|P_low[1]                                                                                                   ; |FSM|P_low[1]                                                                                                      ; pin_out          ;
+; |FSM|P_low[0]                                                                                                   ; |FSM|P_low[0]                                                                                                      ; pin_out          ;
+; |FSM|Clock                                                                                                      ; |FSM|Clock                                                                                                         ; out              ;
+; |FSM|Ain[3]                                                                                                     ; |FSM|Ain[3]                                                                                                        ; out              ;
+; |FSM|Ain[2]                                                                                                     ; |FSM|Ain[2]                                                                                                        ; out              ;
+; |FSM|Ain[1]                                                                                                     ; |FSM|Ain[1]                                                                                                        ; out              ;
+; |FSM|Ain[0]                                                                                                     ; |FSM|Ain[0]                                                                                                        ; out              ;
+; |FSM|Bin[3]                                                                                                     ; |FSM|Bin[3]                                                                                                        ; out              ;
+; |FSM|Bin[2]                                                                                                     ; |FSM|Bin[2]                                                                                                        ; out              ;
+; |FSM|Bin[1]                                                                                                     ; |FSM|Bin[1]                                                                                                        ; out              ;
+; |FSM|Bin[0]                                                                                                     ; |FSM|Bin[0]                                                                                                        ; out              ;
+; |FSM|P_hi[3]                                                                                                    ; |FSM|P_hi[3]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[2]                                                                                                    ; |FSM|P_hi[2]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[1]                                                                                                    ; |FSM|P_hi[1]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[0]                                                                                                    ; |FSM|P_hi[0]                                                                                                       ; pin_out          ;
+; |FSM|OA1:inst|inst16                                                                                            ; |FSM|OA1:inst|inst16                                                                                               ; out0             ;
+; |FSM|OA1:inst|inst14                                                                                            ; |FSM|OA1:inst|inst14                                                                                               ; out0             ;
+; |FSM|OA1:inst|inst13                                                                                            ; |FSM|OA1:inst|inst13                                                                                               ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                                             ; out              ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                  ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                     ; out0             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[2] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[2]               ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[1] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[1]               ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[0] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[0]               ; regout           ;
+; |FSM|UA:inst1|inst16                                                                                            ; |FSM|UA:inst1|inst16                                                                                               ; regout           ;
+; |FSM|UA:inst1|inst14                                                                                            ; |FSM|UA:inst1|inst14                                                                                               ; out0             ;
+; |FSM|UA:inst1|inst9                                                                                             ; |FSM|UA:inst1|inst9                                                                                                ; out0             ;
+; |FSM|UA:inst1|inst17                                                                                            ; |FSM|UA:inst1|inst17                                                                                               ; regout           ;
+; |FSM|UA:inst1|inst                                                                                              ; |FSM|UA:inst1|inst                                                                                                 ; out0             ;
+; |FSM|UA:inst1|inst8                                                                                             ; |FSM|UA:inst1|inst8                                                                                                ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2]           ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]         ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]            ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2]           ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2]           ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10              ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11              ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12              ; out0             ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------+
-; Missing 0-Value Coverage                         ;
-+------------+------------------+------------------+
-; Node Name  ; Output Port Name ; Output Port Type ;
-+------------+------------------+------------------+
-; |UA|Zero   ; |UA|Zero         ; out              ;
-; |UA|inst10 ; |UA|inst10       ; out0             ;
-+------------+------------------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                       ; Output Port Name                                                                                                   ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
+; |FSM|Done                                                                                                       ; |FSM|Done                                                                                                          ; pin_out          ;
+; |FSM|P_low[3]                                                                                                   ; |FSM|P_low[3]                                                                                                      ; pin_out          ;
+; |FSM|P_low[2]                                                                                                   ; |FSM|P_low[2]                                                                                                      ; pin_out          ;
+; |FSM|P_low[1]                                                                                                   ; |FSM|P_low[1]                                                                                                      ; pin_out          ;
+; |FSM|P_low[0]                                                                                                   ; |FSM|P_low[0]                                                                                                      ; pin_out          ;
+; |FSM|Clock                                                                                                      ; |FSM|Clock                                                                                                         ; out              ;
+; |FSM|Ain[3]                                                                                                     ; |FSM|Ain[3]                                                                                                        ; out              ;
+; |FSM|Ain[2]                                                                                                     ; |FSM|Ain[2]                                                                                                        ; out              ;
+; |FSM|Ain[1]                                                                                                     ; |FSM|Ain[1]                                                                                                        ; out              ;
+; |FSM|Ain[0]                                                                                                     ; |FSM|Ain[0]                                                                                                        ; out              ;
+; |FSM|Bin[3]                                                                                                     ; |FSM|Bin[3]                                                                                                        ; out              ;
+; |FSM|Bin[2]                                                                                                     ; |FSM|Bin[2]                                                                                                        ; out              ;
+; |FSM|Bin[1]                                                                                                     ; |FSM|Bin[1]                                                                                                        ; out              ;
+; |FSM|Bin[0]                                                                                                     ; |FSM|Bin[0]                                                                                                        ; out              ;
+; |FSM|P_hi[3]                                                                                                    ; |FSM|P_hi[3]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[2]                                                                                                    ; |FSM|P_hi[2]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[1]                                                                                                    ; |FSM|P_hi[1]                                                                                                       ; pin_out          ;
+; |FSM|P_hi[0]                                                                                                    ; |FSM|P_hi[0]                                                                                                       ; pin_out          ;
+; |FSM|OA1:inst|inst16                                                                                            ; |FSM|OA1:inst|inst16                                                                                               ; out0             ;
+; |FSM|OA1:inst|inst14                                                                                            ; |FSM|OA1:inst|inst14                                                                                               ; out0             ;
+; |FSM|OA1:inst|inst13                                                                                            ; |FSM|OA1:inst|inst13                                                                                               ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[3]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[2]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[1]                                             ; out              ;
+; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                                          ; |FSM|OA1:inst|lpm_latch0:inst|lpm_latch:lpm_latch_component|latches[0]                                             ; out              ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~2                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~3                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~4                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~6                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~7                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~8                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                      ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; out0             ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |FSM|OA1:inst|lpm_shiftreg0:inst3|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                  ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|_~9                     ; out0             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2   ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_comb_bita2      ; sumout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[2] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[2]               ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[1] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[1]               ; regout           ;
+; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|counter_reg_bit1a[0] ; |FSM|OA1:inst|lpm_counter0:inst4|lpm_counter:lpm_counter_component|cntr_t9j:auto_generated|safe_q[0]               ; regout           ;
+; |FSM|UA:inst1|inst16                                                                                            ; |FSM|UA:inst1|inst16                                                                                               ; regout           ;
+; |FSM|UA:inst1|inst14                                                                                            ; |FSM|UA:inst1|inst14                                                                                               ; out0             ;
+; |FSM|UA:inst1|inst9                                                                                             ; |FSM|UA:inst1|inst9                                                                                                ; out0             ;
+; |FSM|UA:inst1|inst17                                                                                            ; |FSM|UA:inst1|inst17                                                                                               ; regout           ;
+; |FSM|UA:inst1|inst15                                                                                            ; |FSM|UA:inst1|inst15                                                                                               ; out0             ;
+; |FSM|UA:inst1|inst                                                                                              ; |FSM|UA:inst1|inst                                                                                                 ; out0             ;
+; |FSM|UA:inst1|inst10                                                                                            ; |FSM|UA:inst1|inst10                                                                                               ; out0             ;
+; |FSM|UA:inst1|inst8                                                                                             ; |FSM|UA:inst1|inst8                                                                                                ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode15w[2]           ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]         ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode1w[2]            ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode24w[2]           ; out0             ;
+; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2]        ; |FSM|UA:inst1|lpm_decode0:inst18|lpm_decode:lpm_decode_component|decode_p7f:auto_generated|w_anode33w[2]           ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~0               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~1               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~2               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~3               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~4               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~5               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~6               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~7               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~8               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9            ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~9               ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~10              ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~11              ; out0             ;
+; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12           ; |FSM|OA1:inst|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component|add_sub_alh:auto_generated|op_1~12              ; out0             ;
++-----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -164,17 +320,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Nov 28 10:53:40 2022
+    Info: Processing started: Sun Dec 04 15:32:54 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off UAZHL -c UAZHL
-Info: Using vector source file "D:/FileSet/GitLabs/AT/lab2_TA_B/UA_VW.vwf"
+Info: Using vector source file "D:/FileSet/GitLabs/AT/lab2_TA_B/FSM.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      85.00 %
-Info: Number of transitions in simulation is 169
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 3
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 142 megabytes
-    Info: Processing ended: Mon Nov 28 10:53:40 2022
+    Info: Processing ended: Sun Dec 04 15:32:54 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

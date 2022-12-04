@@ -1,5 +1,5 @@
 Flow report for UAZHL
-Mon Nov 28 10:23:48 2022
+Sun Dec 04 15:31:26 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Mon Nov 28 10:23:48 2022        ;
+; Flow Status                   ; Successful - Sun Dec 04 15:31:26 2022        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; UAZHL                                        ;
-; Top-level Entity Name         ; UA                                           ;
+; Top-level Entity Name         ; FSM                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 6 / 12,480 ( < 1 % )                         ;
-;     Dedicated logic registers ; 2 / 12,480 ( < 1 % )                         ;
-; Total registers               ; 2                                            ;
-; Total pins                    ; 8 / 343 ( 2 % )                              ;
+;     Combinational ALUTs       ; 22 / 12,480 ( < 1 % )                        ;
+;     Dedicated logic registers ; 13 / 12,480 ( < 1 % )                        ;
+; Total registers               ; 13                                           ;
+; Total pins                    ; 19 / 343 ( 6 % )                             ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/28/2022 10:23:41 ;
+; Start date & time ; 12/04/2022 15:31:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; UAZHL               ;
 +-------------------+---------------------+
@@ -75,14 +75,34 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 27214211326553.166962022107460 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 27214211326553.167015708006200 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_SHIFTREG                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_LATCH                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                   ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.tdf                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.bsf                ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                       ; --            ; UA          ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; UA          ; Top            ;
-; TOP_LEVEL_ENTITY                   ; UA                             ; UAZHL         ; --          ; --             ;
+; MISC_FILE                          ; lpm_shiftreg0.tdf              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_shiftreg0.bsf              ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_latch1.tdf    ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_latch1.bsf    ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_add_sub1.tdf  ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_add_sub1.bsf  ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_counter1.tdf  ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_counter1.bsf  ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_constant1.tdf ; --            ; --          ; --             ;
+; MISC_FILE                          ; ../lab1_TA_B/lpm_constant1.bsf ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; FSM         ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; FSM         ; Top            ;
+; TOP_LEVEL_ENTITY                   ; FSM                            ; UAZHL         ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 
@@ -92,11 +112,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 217 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 260 MB              ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 231 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 261 MB              ; 00:00:02                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 228 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 158 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
+; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:04                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

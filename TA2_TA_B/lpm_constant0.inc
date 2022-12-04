@@ -13,16 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_shiftreg0 
+FUNCTION lpm_constant0 
 (
-	clock,
-	data[3..0],
-	enable,
-	load,
-	shiftin
+
 )
 
 RETURNS (
-	q[3..0],
-	shiftout
+	result[2..0]
 );
