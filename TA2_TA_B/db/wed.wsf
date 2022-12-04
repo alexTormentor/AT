@@ -1270,13 +1270,13 @@ VECTOR("D:/FileSet/GitLabs/Автоматы/TA2_2/TA2_2.vwf")
 	}
 }
 
-VECTOR("D:/FileSet/GitLabs/AT/TA2_TA_B/db/TA2_2.sim.cvwf")
+VECTOR("D:/FileSet/GitLabs/AT/TA2_TA_B/TA2_2.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 394577;
-		NUMERATOR = 934;
-		DENOMINATOR = 394577;
+		ZEND = 0;
+		NUMERATOR = 0;
+		DENOMINATOR = 0;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1473,13 +1473,13 @@ VECTOR("D:/FileSet/GitLabs/AT/TA2_TA_B/db/TA2_2.sim.cvwf")
 	}
 }
 
-VECTOR("D:/FileSet/GitLabs/AT/TA2_TA_B/TA2_2.vwf")
+VECTOR("D:/FileSet/GitLabs/AT/TA2_TA_B/db/TA2_2.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 0;
-		NUMERATOR = 0;
-		DENOMINATOR = 0;
+		ZEND = 394577;
+		NUMERATOR = 934;
+		DENOMINATOR = 394577;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

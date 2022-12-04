@@ -1,10 +1,10 @@
 |TA2_2
 Done <= UA:inst2.Done
 Start => UA:inst2.Start
-P_low[0] <= OA:inst.Bout[0]
-P_low[1] <= OA:inst.Bout[1]
-P_low[2] <= OA:inst.Bout[2]
-P_low[3] <= OA:inst.Bout[3]
+P_low[0] <= OA:inst.P_hi[0]
+P_low[1] <= OA:inst.P_hi[1]
+P_low[2] <= OA:inst.P_hi[2]
+P_low[3] <= OA:inst.P_hi[3]
 Clock => OA:inst.Clock
 Clock => UA:inst2.Clk
 Ain[0] => OA:inst.Ain[0]
@@ -15,10 +15,10 @@ Bin[0] => OA:inst.Bin[0]
 Bin[1] => OA:inst.Bin[1]
 Bin[2] => OA:inst.Bin[2]
 Bin[3] => OA:inst.Bin[3]
-P_hi[0] <= OA:inst.P_hi[0]
-P_hi[1] <= OA:inst.P_hi[1]
-P_hi[2] <= OA:inst.P_hi[2]
-P_hi[3] <= OA:inst.P_hi[3]
+P_hi[0] <= OA:inst.Bout[0]
+P_hi[1] <= OA:inst.Bout[1]
+P_hi[2] <= OA:inst.Bout[2]
+P_hi[3] <= OA:inst.Bout[3]
 
 
 |TA2_2|UA:inst2
@@ -90,10 +90,10 @@ Bin[0] => lpm_shiftreg1:inst10.data[0]
 Bin[1] => lpm_shiftreg1:inst10.data[1]
 Bin[2] => lpm_shiftreg1:inst10.data[2]
 Bin[3] => lpm_shiftreg1:inst10.data[3]
-P_hi[0] <= P[4].DB_MAX_OUTPUT_PORT_TYPE
-P_hi[1] <= P[5].DB_MAX_OUTPUT_PORT_TYPE
-P_hi[2] <= P[6].DB_MAX_OUTPUT_PORT_TYPE
-P_hi[3] <= P[7].DB_MAX_OUTPUT_PORT_TYPE
+P_hi[0] <= lpm_shiftreg0:inst4.q[0]
+P_hi[1] <= lpm_shiftreg0:inst4.q[1]
+P_hi[2] <= lpm_shiftreg0:inst4.q[2]
+P_hi[3] <= lpm_shiftreg0:inst4.q[3]
 Add => lpm_shiftreg0:inst4.load
 Add => inst7.IN1
 Ain[0] => lpm_latch0:inst13.data[0]

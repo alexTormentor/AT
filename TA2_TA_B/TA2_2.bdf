@@ -374,11 +374,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 120)
-	(pt 856 120)
-	(bus)
-)
-(connector
 	(pt 816 392)
 	(pt 816 104)
 )
@@ -388,14 +383,44 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 816 104)
+	(text "P_low[3]" (rect 809 376 850 388)(font "Arial" ))
+	(pt 816 392)
+	(pt 208 392)
+)
+(connector
+	(pt 760 120)
+	(pt 832 120)
+	(bus)
+)
+(connector
+	(pt 832 120)
+	(pt 832 104)
+	(bus)
+)
+(connector
+	(pt 832 104)
 	(pt 856 104)
 	(bus)
 )
 (connector
-	(text "P_low[3]" (rect 809 376 850 388)(font "Arial" ))
-	(pt 816 392)
-	(pt 208 392)
+	(pt 856 120)
+	(pt 848 120)
+	(bus)
+)
+(connector
+	(pt 848 88)
+	(pt 848 120)
+	(bus)
+)
+(connector
+	(pt 816 88)
+	(pt 848 88)
+	(bus)
+)
+(connector
+	(pt 816 88)
+	(pt 816 104)
+	(bus)
 )
 (junction (pt 192 152))
 (junction (pt 816 104))

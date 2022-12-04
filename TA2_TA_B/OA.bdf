@@ -800,7 +800,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "P[7..4]" (rect 914 280 947 292)(font "Arial" ))
+	(text "<<__$DEF_ALIAS406>>" (rect 914 280 1032 292)(font "Arial" )(invisible))
 	(pt 896 296)
 	(pt 936 296)
 	(bus)
