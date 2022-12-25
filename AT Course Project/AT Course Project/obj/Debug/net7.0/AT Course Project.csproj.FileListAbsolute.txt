@@ -1,0 +1,15 @@
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.csproj.AssemblyReference.cache
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.AssemblyInfoInputs.cache
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.AssemblyInfo.cs
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.csproj.CoreCompileInputs.cache
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\bin\Debug\net7.0\AT Course Project.exe
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\bin\Debug\net7.0\AT Course Project.deps.json
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\bin\Debug\net7.0\AT Course Project.runtimeconfig.json
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\bin\Debug\net7.0\AT Course Project.dll
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\bin\Debug\net7.0\AT Course Project.pdb
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.dll
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\refint\AT Course Project.dll
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.pdb
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\AT Course Project.genruntimeconfig.cache
+D:\FileSet\GitLabs\AT\AT Course Project\AT Course Project\obj\Debug\net7.0\ref\AT Course Project.dll

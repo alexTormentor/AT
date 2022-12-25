@@ -103,13 +103,13 @@ VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/UA_VW.vwf")
 	}
 }
 
-VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/db/UAZHL.sim.cvwf")
+VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/FSM.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 490898;
-		NUMERATOR = 1162;
-		DENOMINATOR = 490898;
+		ZEND = 546800;
+		NUMERATOR = 1367;
+		DENOMINATOR = 546800;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -306,13 +306,13 @@ VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/db/UAZHL.sim.cvwf")
 	}
 }
 
-VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/FSM.vwf")
+VECTOR("D:/FileSet/GitLabs/AT/lab2_TA_B/db/UAZHL.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 546800;
-		NUMERATOR = 1367;
-		DENOMINATOR = 546800;
+		ZEND = 490898;
+		NUMERATOR = 1162;
+		DENOMINATOR = 490898;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
